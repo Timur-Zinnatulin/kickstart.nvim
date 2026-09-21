@@ -424,12 +424,10 @@ do
   --
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
   vim.pack.add { gh 'rebelot/kanagawa.nvim' }
-  ---@diagnostic disable-next-line: missing-fields
-  -- require('tokyonight').setup {
-  --   styles = {
-  --     comments = { italic = false }, -- Disable italics in comments
-  --   },
-  -- }
+  require("kanagawa").setup {
+          transparent = true,
+          theme = "default",
+  }
 
   -- Load the colorscheme here.
   -- Like many other themes, this one has different styles, and you could load
